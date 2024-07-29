@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/user_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Логин"/>
+
+    <EditText
+        android:id="@+id/password_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Пароль"/>
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить логин и пароль"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="5dp"
+        />
+
+    <Button
+        android:id="@+id/buttonBck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="5dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>
